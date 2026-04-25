@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import Rem from "../images/Rem.png";
 
 function Navbar() {
-  const location = useLocation();
 
   return (
     <nav
