@@ -1,6 +1,5 @@
 import { Navbar } from "../../../design/molecule";
 import { Button, Input } from "../../../design/atom";
-import Background1 from "../../design/images/Background1.jpg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -23,9 +22,7 @@ function Login() {
 
   return (
     <div
-      className="min-h-screen items-center justify-center bg-cover bg-center h-screen"
-      style={{ backgroundImage: `url(${Background1})` }}
-    >
+      className="min-h-screen items-center justify-center bg-cover bg-center h-screen"    >
       <Navbar />
       <form
         onSubmit={handleSubmit}
