@@ -3,7 +3,6 @@ import { Button, Input } from "../../../design/atom";
 import Background1 from "../../design/images/Background1.jpg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { loginRequest } from "../services/Auth.service";
 
 function Login() {
   const [email, Setemail] = useState("");
@@ -14,11 +13,6 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await loginRequest({ email, password });
-
-      localStorage.setItem("token", res.access_token);
-      localStorage.setItem("refresh_token", res.refresh_token);
-      localStorage.setItem("isAuth", "true");
 
       navigate("/home");
     } catch (error) {
